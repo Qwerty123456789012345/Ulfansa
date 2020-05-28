@@ -1,0 +1,230 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+padding: 0;
+margin: 0;
+}
+
+.header{
+    font-family: 'Lobster Two', cursive;
+    background-color:rgb(0,0,0,0.92);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+}
+
+.header > *{
+    padding: 10px;
+}
+
+#h-menu{
+    margin-left: auto;
+}
+
+#h-menu > *{
+    padding-left: 40px;
+    transition: all 0.2s ease-in-out; 
+}
+
+#h-menu > *:hover{
+    font-size: 1.1em;
+}
+
+.user-feed {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1.4vh;
+  margin-bottom: 1.4vh;
+}
+
+.user-feed > div{
+  padding: 5px;
+}
+
+.post-outer{
+  border-radius: 10px;
+  background-color: white;
+}
+
+.shadow-lg{
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.header-post{
+  display: flex;
+  padding-left: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+img.profile-img-small{
+  max-width: 50px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+img.post-image{
+  display: block;
+  width: 100%;
+  height: 50%;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-transition:all 0.25s ease-in-out;
+  -moz-transition:all 0.25s ease-in-out;
+  -o-transition:all 0.25s ease-in-out;
+  -ms-transition:all 0.25s ease-in-out;
+  transition:all 0.25s ease-in-out;
+}
+
+.header-username{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2em;
+}
+
+.footer-post{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  user-select: none;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.post-container:hover .caption{
+  opacity: 1;
+}
+
+.post-container:hover img{
+  opacity: 1;
+  transform: scale(1.15,1.15);
+  -webkit-transform:scale(1.15,1.15);
+  -moz-transform:scale(1.15,1.15);
+  -ms-transform:scale(1.15,1.15);
+  -o-transform:scale(1.15,1.15);
+  filter: blur(2px) brightness(50%);
+}
+
+
+.post-container .caption{
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  padding: 4.3%;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition:all 0.45s ease-in-out;
+  -moz-transition:all 0.45s ease-in-out;
+  -o-transition:all 0.45s ease-in-out;
+  -ms-transition:all 0.45s ease-in-out;
+  transition:all 0.45s ease-in-out;
+  font-size: 0.9rem;
+  z-index: 10;
+  color: #fff;
+}
+
+.header-info{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  font-size: 1em;
+}
+
+.header-info-status{
+  font-family: 'Kalam', cursive;
+  font-size: 0.8em;
+}
+
+
+.header-options{
+  display: flex;
+  margin-left: auto;
+}
+
+.hamburger{
+  user-select: none;
+}
+
+.hamburger-box {
+  width: 22px;
+  height: 24px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 20px;
+  height: 3px;
+  border-radius: 14px;
+}
+.hamburger-inner::before {
+  top: -7px;
+}
+.hamburger-inner::after {
+  bottom: -7px;
+}
+
+.toLeft{
+  margin-left: auto;
+}
+
+@media (min-width: 1281px){
+
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+.header-info{
+  font-size: 0.95em;
+}
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.header-info{
+  font-size: 0.95em;
+}
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+.header-info{
+  font-size: 0.95em;
+}
+  
+}
+
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+  #h-menu > *{
+    padding-left: 23px;
+  }
+
+.header-info{
+  font-size: 0.87em;
+}
+  
+}
+
+@media (max-width: 320px) {
+
+  #h-menu > *{
+    padding-left: 10px;
+  }
+
+
+  .header-info{
+    font-size: 0.87em;
+  }
+  
+}
