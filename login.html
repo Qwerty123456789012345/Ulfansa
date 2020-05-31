@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to Ulfansa</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 </head>
 <body>
        <div class="container Absolute-Center">
-            <div class="logo-text">Ulfansa</div>
-            <div id="firebaseui-auth-container"></div>
-            <div id="loader">Loading...</div>
+            <div class="logo-text"><span class="anim-text-flow">Ulfansa</span></div>
+            
+            <div class="login-info">
+                <div id="firebaseui-auth-container"></div>
+                <div id="loader">Loading...</div>
+            </div>
        </div>
-    <div id="particles-js"></div>
+       <div id="particles-js"></div>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
-    <script src="./js/InitializeFirebase.js"></script>
-    <script src="./js/InitializeFirebaseUI.js"></script>
+    <script src="js/InitializeFirebase.min.js"></script>
+    <script src="js/InitializeFirebaseUI.js"></script>
 </body>
-<script src="./js/particles.min.js"></script>
-<script src="./js/font-awesome.js"></script>
-<script src="./js/login.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/font-awesome.js"></script>
+<script src="js/login.js"></script>
 </html>

@@ -12,149 +12,241 @@
     <link rel="stylesheet" href="css/rainbow.min.css">
     <!-- MAIN CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <script>let testing = true</script>
+    <script>let testing = true;</script>
 </head>
 <body>
     <header class="header">
-        <div id="logo-text" class="rainbow-text-static"><span class=" anim-text-flow">Ulfansa</span></div>
+        <div><span class="anim-text-flow logo-text">Ulfansa</span></div>
         <div id="h-menu">
-          <i class="fas fa-home"></i>
-          <i class="far fa-images"></i>
-          <i class="fas fa-user-cog"></i>
+        <div>
+          <input type="radio" name="nav-icons" class="nav-icon" id="home-btn" checked>
+          <label for="home-btn"><i class="fas fa-home"></i></label>
+        </div>
+        
+        <div>
+          <input type="radio" name="nav-icons" class="nav-icon" id="gallery-btn">
+          <label for="gallery-btn"><i class="far fa-images"></i></label>
+        </div>
+        
+        <div>
+          <input type="radio" name="nav-icons" class="nav-icon" id="user-setting-btn">
+          <label for="user-setting-btn"><i class="fas fa-user-cog"></i></label>
+        </div>
+  
         </div>
     </header>
 
-<div id="home">
+<section id="home">
+
+
 <!--USER FEED-->
-<div class="user-feed">
+    <div class="user-feed">
+        
+        <!-- Cloumn-->
+        <div class="col-lg-4 col-md-6 col-12">
 
-<div class="col-lg-4 col-md-6 col-12">
-    <!-- Cloumn-->
-            <div class="post-outer shadow-lg">
-                    <!-- Header Post-->
-                    <div class="header-post">
-                     <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
-                        <div class="header-info">
-                            <div>
-                                <div class="header-username">Sahil Shahane</div>
-                                <div class="header-info-status">Luckey</div>
-                            </div>   
+                    <div class="post-outer shadow-lg">
+                            <!-- Header Post-->
+                            <div class="header-post">
+                                <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
+                                    <div class="header-info">
+                                        <div>
+                                            <div class="header-username">Sahil Shahane</div>
+                                            <div class="header-info-status">Luckey</div>
+                                        </div>   
+                                    </div>
+                                    <button class="hamburger hamburger--vortex toLeft" type="button">
+                                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                                    </button>      
+                            </div>
+                            <!-- Header Post End-->
+                        <div class="post-container">
+                            <img src="https://source.unsplash.com/random/random/?vivid" class="post-image">
+                                <div class="caption">
+                                    <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
+                                </div>
                         </div>
-                        <button class="hamburger hamburger--vortex toLeft" type="button">
-                            <span class="hamburger-box">
-                              <span class="hamburger-inner"></span>
-                            </span>
-                        </button>      
                     </div>
-                    <!-- Header Post End-->
-                <div class="post-container">
-                    <img src="https://source.unsplash.com/random/?Technology" class="post-image">
-                        <div class="caption">
-                            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
-                        </div>
-                 </div>
-             </div>
-            <!--Column End-->
-</div>
 
-<div class="col-lg-4 col-md-6 col-12">
-    <!-- Cloumn-->
-            <div class="post-outer shadow-lg">
-                    <!-- Header Post-->
-                    <div class="header-post">
-                     <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
-                        <div class="header-info">
-                            <div>
-                                <div class="header-username">Sahil Shahane</div>
-                                <div class="header-info-status">Luckey</div>
-                            </div>   
+        </div>
+        <!--Column End-->
+
+
+        <!-- Cloumn-->
+        <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="post-outer shadow-lg">
+                            <!-- Header Post-->
+                            <div class="header-post">
+                                <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
+                                    <div class="header-info">
+                                        <div>
+                                            <div class="header-username">Sahil Shahane</div>
+                                            <div class="header-info-status">Luckey</div>
+                                        </div>   
+                                    </div>
+                                    <button class="hamburger hamburger--vortex toLeft" type="button">
+                                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                                    </button>      
+                            </div>
+                            <!-- Header Post End-->
+                        <div class="post-container">
+                            <img src="https://source.unsplash.com/random/random/?abstarct-dark" class="post-image">
+                                <div class="caption">
+                                    <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
+                                </div>
                         </div>
-                        <button class="hamburger hamburger--vortex toLeft" type="button">
-                            <span class="hamburger-box">
-                              <span class="hamburger-inner"></span>
-                            </span>
-                        </button>      
                     </div>
-                    <!-- Header Post End-->
-                <div class="post-container">
-                    <img src="https://source.unsplash.com/random/?Technology" class="post-image">
-                        <div class="caption">
-                            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
-                        </div>
-                 </div>
-             </div>
-            <!--Column End-->
-</div>
 
-<div class="col-lg-4 col-md-6 col-12">
-    <!-- Cloumn-->
-            <div class="post-outer shadow-lg">
-                    <!-- Header Post-->
-                    <div class="header-post">
-                     <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
-                        <div class="header-info">
-                            <div>
-                                <div class="header-username">Sahil Shahane</div>
-                                <div class="header-info-status">Luckey</div>
-                            </div>   
+        </div>
+        <!--Column End-->
+
+
+
+        <!-- Cloumn-->
+        <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="post-outer shadow-lg">
+                            <!-- Header Post-->
+                            <div class="header-post">
+                                <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
+                                    <div class="header-info">
+                                        <div>
+                                            <div class="header-username">Sahil Shahane</div>
+                                            <div class="header-info-status">Luckey</div>
+                                        </div>   
+                                    </div>
+                                    <button class="hamburger hamburger--vortex toLeft" type="button">
+                                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                                    </button>      
+                            </div>
+                            <!-- Header Post End-->
+                        <div class="post-container">
+                            <img src="https://source.unsplash.com/random/random/?nature" class="post-image">
+                                <div class="caption">
+                                    <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
+                                </div>
                         </div>
-                        <button class="hamburger hamburger--vortex toLeft" type="button">
-                            <span class="hamburger-box">
-                              <span class="hamburger-inner"></span>
-                            </span>
-                        </button>      
                     </div>
-                    <!-- Header Post End-->
-                <div class="post-container">
-                    <img src="https://source.unsplash.com/random/?Technology" class="post-image">
-                        <div class="caption">
-                            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
-                        </div>
-                 </div>
-             </div>
-            <!--Column End-->
-</div>
 
-<div class="col-lg-4 col-md-6 col-12">
-    <!-- Cloumn-->
-            <div class="post-outer shadow-lg">
-                    <!-- Header Post-->
-                    <div class="header-post">
-                     <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
-                        <div class="header-info">
-                            <div>
-                                <div class="header-username">Sahil Shahane</div>
-                                <div class="header-info-status">Luckey</div>
-                            </div>   
+        </div>
+        <!--Column End-->
+
+
+
+        <!-- Cloumn-->
+        <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="post-outer shadow-lg">
+                            <!-- Header Post-->
+                            <div class="header-post">
+                                <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
+                                    <div class="header-info">
+                                        <div>
+                                            <div class="header-username">Sahil Shahane</div>
+                                            <div class="header-info-status">Luckey</div>
+                                        </div>   
+                                    </div>
+                                    <button class="hamburger hamburger--vortex toLeft" type="button">
+                                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                                    </button>      
+                            </div>
+                            <!-- Header Post End-->
+                        <div class="post-container">
+                            <img src="https://source.unsplash.com/random/random/?car" class="post-image">
+                                <div class="caption">
+                                    <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
+                                </div>
                         </div>
-                        <button class="hamburger hamburger--vortex toLeft" type="button">
-                            <span class="hamburger-box">
-                              <span class="hamburger-inner"></span>
-                            </span>
-                        </button>      
                     </div>
-                    <!-- Header Post End-->
-                <div class="post-container">
-                    <img src="https://source.unsplash.com/random/?Technology" class="post-image">
-                        <div class="caption">
-                            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
+
+        </div>
+        <!--Column End-->
+
+
+
+        <!-- Cloumn-->
+        <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="post-outer shadow-lg">
+                            <!-- Header Post-->
+                            <div class="header-post">
+                                <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
+                                    <div class="header-info">
+                                        <div>
+                                            <div class="header-username">Sahil Shahane</div>
+                                            <div class="header-info-status">Luckey</div>
+                                        </div>   
+                                    </div>
+                                    <button class="hamburger hamburger--vortex toLeft" type="button">
+                                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                                    </button>      
+                            </div>
+                            <!-- Header Post End-->
+                        <div class="post-container">
+                            <img src="https://source.unsplash.com/random/random/?light,dark" class="post-image">
+                                <div class="caption">
+                                    <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
+                                </div>
                         </div>
-                 </div>
-             </div>
-            <!--Column End-->
-</div>
+                    </div>
 
-</div>
-<!--USER FEED END-->
+        </div>
+        <!--Column End-->
 
-</div>  
-</div>
+
+        <!-- Cloumn-->
+        <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="post-outer shadow-lg">
+                            <!-- Header Post-->
+                            <div class="header-post">
+                                <img src="assets/images/default-profile.png" alt="" class="profile-img-small">
+                                    <div class="header-info">
+                                        <div>
+                                            <div class="header-username">Sahil Shahane</div>
+                                            <div class="header-info-status">Luckey</div>
+                                        </div>   
+                                    </div>
+                                    <button class="hamburger hamburger--vortex toLeft" type="button">
+                                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                                    </button>      
+                            </div>
+                            <!-- Header Post End-->
+                        <div class="post-container">
+                            <img src="https://source.unsplash.com/random/?space" class="post-image">
+                                <div class="caption">
+                                    <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisl tincidunt, facilisis ex eget, laoreet massa. Duis gravida viverra dolor in dictum. Sed eleifend ante arcu, sagittis accumsan lorem ultricies ac. Etiam tortor sem, viverra finibus tristique sed, porttitor in urna. Maecenas eget nibh rutrum"</i>
+                                </div>
+                        </div>
+                    </div>
+
+        </div>
+        <!--Column End-->
+
+
+    </div>
+    <!--USER FEED END-->
+
+</section>  
+
+<section id="gallery" style="display: none;">
+    This is Gallery
+</section>
+
+<section id="user-setting" style="display: none;">
+    <div id="logout">
+        <button id="logout-btn"class="shadow-lg">Log-Out</button>
+    </div>
+</section>
+
 <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
-<script src="js/InitializeFirebase.js"></script>
+<script src="js/InitializeFirebase.min.js"></script>
 </body>
 <script src="js/jquery_3.5.1.js"></script>
 <script src="js/font-awesome.js" crossorigin="anonymous"></script>
+<script src="js/rainbow-text.min.js"></script>
 <!-- MAIN JS-->
 <script src="js/script.js"></script>
 </html>

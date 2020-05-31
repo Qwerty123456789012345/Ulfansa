@@ -4,24 +4,30 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #090909;
+    background-color: rgba(0, 0,0,0.95);
     overflow: hidden;
 }
 
 .container{
-    display: block;
+    display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
     width: 30%;
-    height: 75%;
+    height: 340px;
     border-radius: 10px;
     background-color: white;
-    padding: 10px;
+    z-index: 2;
 }
+
 #particles-js {
     width: 100%;
     height: 100%;
+    top:0;
+    left: 0;
+    position:fixed;
+    z-index: 1;
 }
+
+
 .Absolute-Center {
     margin: auto;
     position: absolute;
@@ -33,12 +39,21 @@ body{
     display: block;
     text-align: center;
     font-size: 4em;
+    padding: 10px;
 }
 
 #firebaseui-auth-container{
     width: 100%;
     font-size: 3px;
 }
+
+.login-info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 
 .shadow-box{
     
@@ -83,7 +98,7 @@ body{
             font-size: 2.8em;
         }
         .container{
-            width: 70%;
+            width: 95%;
         }
     
     }
