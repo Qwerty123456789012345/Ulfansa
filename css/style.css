@@ -48,23 +48,24 @@ margin: 0;
   display : inline;
 }
 
-
-
-.user-feed {
-  display: flex;
-  flex-flow: row wrap;
-  margin-top: 1.4vh;
-  margin-bottom: 1.4vh;
+.user-feed{
+  margin-top: 1.9vh;
 }
 
 .user-feed > div{
-  padding: 5px;
+  padding: 0px;
 }
 
 .post-outer{
   border-radius: 10px;
   background-color: white;
+  width: 100%;
 }
+
+.post-column{
+  width: 33%;
+}
+
 
 .shadow-lg{
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
